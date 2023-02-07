@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Знаем. Учим. Курсы по веб-дизайну</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/typography.css"/>
+    <link rel="stylesheet" href="styles/layout.css"/>
+    <link rel="stylesheet" href="styles/colors.css"/>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header, footer {
+        color: white;
+    }
+
+    header div.layout__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 10px solid #295e90;
+        padding: 0 100px;
+    }
+
+    header div.layout__header p {
+        margin-right: 30px;
+    }
+
+    header div.layout__header img {
+        margin-right: 60px;
+    }
+
+    main section.layout__main div.banner {
+        background-image: url("images/main-background.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        /*height: 904px;*/
+        color: var(--color-white);
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 80px;
+        padding-bottom: 250px;
+    }
+
+    main section.layout__main div.banner img{
+        padding-top: 70px;
+    }
+
+    main section.layout__main div.banner div{
+        width: 600px;
+    }
+
+    main section.layout__main div.banner button{
+        background: var(--color-red);
+        padding: 10px 15px;
+        color: var(--color-white);
+        border: 0;
+    }
+    .layout__content{
+        display: flex;
+        align-items: center;
+        max-width: 1727px;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .pic_craken{
+        margin-right: 100px;
+    }
+
+    .text{
+        max-width: 900px;
+    }
+
+    .numbers{
+        background-color: var(--color-lightgrey);
+        max-width: 1728px;
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        align-items: center;
+        margin-left: max(3%,96px);
+        margin-right: max(3%,96px);
+        margin-top: 68px;
+        margin-bottom: 74px;
+    }
+
+    .num{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .typography_indicators {
+        color: var(--color-grey);
+    }
+
+    .people{
+        max-width: 1200px;
+        display: flex;
+        margin-left: max(3%,360px);
+        margin-right: max(3%,360px);
+        padding-left: 60px;
+        padding-right: 81px;
+        flex-direction: column;
+    }
+
+    .dn{
+        display: none;
+    }
+    
+    .img_man{
+        border-radius: 50%;
+        border: 1px;
+        border:solid;
+        margin-right: 140px;
+    }
+    .img_woman{
+        border-radius: 50%;
+        margin-right: 140px;
+    }
+
+    .people_text{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .people_each{
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .but{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 45px;
+    }
+    .butt{
+        background-color:  var( --color-red);
+        color: var(--color-white);
+        border: none;
+        padding: 13px 94px 13px 92px ;
+
+    }
+
+    footer{
+        padding-top: 67px;
+        max-width: 1920px;
+    }
+    .foot{
+        /*margin: 0 489px 0 257px;*/
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+</style>
+</head>
+<body>
+<header>
+    <div class="layout__header">
+        <img id="logo" class="inline_disp" src="images/logo.svg" width="45px" height="45px">
+        <p class="typography_link"> Онлайн курсы</p>
+        <p class="typography_link"> Отзывы</p>
+        <p class="typography_link">Контакты</p>
+    </div>
+</header>
+
+<main>
+    <section class="layout__main">
+        <div class="banner">
+            <img id="logo2" class="inline_disp" src="images/logo.svg" width="350px" height="350px">
+            <div>
+                <h1 class="typography_h1">Веб-дизайн с нуля с гарантией трудоустройства</h1>
+                <button class="typography_indicators">Записаться на курсы</button>
+            </div>
+        </div>
+
+        <div class="layout__content"> 
+            <img class="inline_disp" src="images/option1.png" width="576px" height="482px">
+            <div class="text">
+                <h2 class="typography_h2">Фронтенд-разработчик</h2>
+                <p class="typography_p1">Cоздает видимую для пользователя часть веб-страницы и его главная задача – точно передать в верстке то, что создал дизайнер, а также реализовать пользовательскую логику.</p>
+                <p class="typography_p1"> Для того, чтобы стать фронтенд-разработчиком, не нужны зания математики. Освоить специальность вы сможете за 3-6 месяцев, в зависимости от того. сколько времени будете уделять теории и кодингу.</p>
+            </div>
+        </div>
+        <div class="layout__content"> 
+            <div class="text">
+                <h2 class="typography_h2">Бэкенд-разработчик</h2>
+                <p class="typography_p1">Отвечает за внутреннюю и вычисслительную логику веб-сайта или веб-приложения. Его главная задача - разрабатывать то, что пользователь не видит. Это логика и функционал сайта, базы данных, интеграция и взаимодействие компонентов.</p>
+                <p class="typography_p1"> Бэкенд-разработчик должен уметь програмировать и работать с своременными системами управления контентом. Освоить специальность вы сможете за 3-6 месяцев с возможностью выбора спецкурсов.</p>
+            </div>
+            <img class="inline_disp" src="images/option2.png" width="576px" height="482px">
+        </div>
+        <div class="layout__content"> 
+            <img class="inline_disp pic_craken" src="images/option3.png" width="542px" height="352px">
+            <div class="text">
+                <h2 class="typography_h2">Фулстек-разработчик</h2>
+                <p class="typography_p1">Разбирается во всем многообразии технологий, используемых в веб-дизайне и может сделать проект в одиночку. Может настроить сервер, запустить на нем фреймворк с базой данных и сверстать страницы.</p>
+                <p class="typography_p1">Фулстек - максимум технлогий, и самый широкий спектр навыков. Готовим специальстов за 6-9 месяцев на реальных кейсах.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="numbers">
+        <div class="num">
+            <img class="" src="images/numbers-people.png" width="323px" height="244px">
+            <p class="typography_numeric"> 206 265</p>
+            <p class="typography_indicators"> Пользователей</p>
+        </div>
+        <div class="num">
+            <img class="" src="images/numbers-cube.png" width="323px" height="244px">
+            <p class="typography_numeric"> 512</p>
+            <p class="typography_indicators"> Заданий</p>
+        </div>
+        <div class="num">
+            <img src="images/numbers-puzzle.png" width="323px" height="244px">
+            <p class="typography_numeric"> 16 777 216</p>
+            <p class="typography_indicators"> Успешно пройдено</p>
+        </div>
+    </section>
+
+    <section id="people_hide" class="people typography_p1 dn">
+        <div class="people_each">
+            <img class="img_man" src="images/portrait01.jpg" width="161px" height="161px">
+            <div class="people_text">
+                <p>Дружелюбная атмосфера, моментальная обратная связь. Ничего лишнего, только практические навыки!</p>
+                <p><i>Николай Ироненко, дизайнер со стажем </i></p>
+            </div>
+        </div>
+        <div class="people_each">
+            <img class="img_woman" src="images/portrait02.jpg" width="161px" height="161px">
+            <div class="people_text">
+                <p>Сперва показалось: ничего особенного. Но потом втягиваешься в работу, и уже не остановить!</p>
+                <p><i>Вероника Неонова, педагог</i></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="but">
+        <button id="butt_text" class="butt typography_p1 ">Показать отзывы</button>
+    </section>
+
+</main>
+
+<footer class="layout__footer">
+   <div class="foot">
+        <div>
+            <img id="logo" class="inline_disp" src="images/logo.svg" width="169.19px">
+        </div>
+        <div>
+            <p class="typography_link"> Информация</p>
+            <p class="typography_link"> Лицензия</p>
+        </div>
+        <div>
+            <p class="typography_link">+7 123 456-78-90</p>
+            <p class="typography_link">Контактный центр</p>
+        </div>
+    </div>
+    
+</footer>
+
+
+</body>
+<script src="scripts/jquery.min.js"></script>
+<script>
+	$('#butt_text').click(fopen);
+
+	function fopen(e) {
+		// $('#people_hide').removeClass('dn');
+
+		if($("#people_hide").hasClass("dn")) {
+			$('#people_hide').removeClass('dn');
+		} else {
+			$('#people_hide').addClass('dn');
+        }
+	}
+</script>
+</html>
