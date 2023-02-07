@@ -242,7 +242,8 @@
     </section>
 
     <section class="but">
-        <button id="butt_text" class="butt typography_p1 ">Показать отзывы</button>
+        <button id="butt_text1" class="butt typography_p1 ">Показать отзывы</button>
+        <button id="butt_text"  class="butt typography_p1 dn">Скрыть отзывы</button>
     </section>
 
 </main>
@@ -268,15 +269,17 @@
 </body>
 <script src="scripts/jquery.min.js"></script>
 <script>
-	$('#butt_text').click(fopen);
+	$('.butt').click(fopen);
 
 	function fopen(e) {
-		// $('#people_hide').removeClass('dn');
-
 		if($("#people_hide").hasClass("dn")) {
 			$('#people_hide').removeClass('dn');
+			$('#butt_text').removeClass('dn');
+			$('#butt_text1').addClass('dn');
 		} else {
 			$('#people_hide').addClass('dn');
+			$('#butt_text').addClass('dn');
+			$('#butt_text1').removeClass('dn');
         }
 	}
 </script>
